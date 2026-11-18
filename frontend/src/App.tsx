@@ -65,7 +65,7 @@ export default function App() {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 1800);
 
-      const response = await fetch('https://notfind.pythonanywhere.com/predict', {
+      const response = await fetch('https://notFind.pythonanywhere.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
